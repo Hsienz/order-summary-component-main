@@ -21,6 +21,9 @@ body {
 
 body {
   background-color: hsl(225deg, 100%, 94%);
+  background-image: url(./images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: auto 50%;
 }
 
 h1,
@@ -41,6 +44,11 @@ h1 {
 @media screen and (max-height: 700px) {
   html, body {
     height: 700px;
+  }
+}
+@media screen and (max-width: 620px) {
+  body {
+    background-image: url(./images/pattern-background-mobile.svg);
   }
 }
 .container {
