@@ -23,7 +23,7 @@ body {
   background-color: hsl(225deg, 100%, 94%);
   background-image: url(./images/pattern-background-desktop.svg);
   background-repeat: repeat-x;
-  background-size: auto 50%;
+  background-size: auto;
 }
 
 h1,
