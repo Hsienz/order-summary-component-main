@@ -123,6 +123,7 @@ h1 {
   margin: 0 auto;
   transition: all 0.5s ease;
   font-weight: 900;
+  cursor: pointer;
 }
 .container #card #content #buttonDiv button:nth-child(1) {
   background-color: hsl(245deg, 75%, 52%);
