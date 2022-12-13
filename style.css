@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.flex-row {
+  display: flex;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background-color: hsl(225deg, 100%, 94%);
+}
+
+h1,
+p, a {
+  font-family: "Red Hat Display", sans-serif;
+}
+
+p {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+h1 {
+  font-size: 32px;
+  font-weight: 900;
+}
+
+@media screen and (max-height: 700px) {
+  html, body {
+    height: 700px;
+  }
+}
+.container {
+  justify-content: center;
+  align-items: center;
+  height: inherit;
+}
+.container #card {
+  width: 400px;
+  height: 600px;
+  background-color: #fff;
+  border-radius: 15px;
+  align-items: center;
+}
+.container #card > img {
+  width: 100%;
+  border-radius: 15px 15px 0 0;
+}
+.container #card #content {
+  width: 90%;
+  height: 70%;
+  justify-content: space-around;
+}
+.container #card #content h1,
+.container #card #content p {
+  text-align: center;
+}
+.container #card #content h1 {
+  color: hsl(223deg, 47%, 23%);
+  position: relative;
+  top: 15px;
+}
+.container #card #content p {
+  color: hsl(224deg, 23%, 55%);
+}
+.container #card #content #plan {
+  background-color: hsl(225deg, 100%, 98%);
+  padding: 15px 10px;
+  border-radius: 15px;
+  height: 10%;
+  justify-content: space-between;
+  align-items: center;
+}
+.container #card #content #plan div div {
+  padding-left: 15px;
+  justify-content: center;
+}
+.container #card #content #plan div div p:nth-child(1) {
+  color: hsl(223deg, 47%, 23%);
+  font-weight: 700;
+}
+.container #card #content #plan a {
+  padding-right: 15px;
+  font-weight: 900;
+  color: hsl(245deg, 75%, 52%);
+}
+.container #card #content #plan a:hover {
+  color: hsl(224deg, 23%, 55%);
+  text-decoration: none;
+}
+.container #card #content #buttonDiv {
+  width: 100%;
+  height: 30%;
+  justify-content: space-around;
+  align-items: center;
+}
+.container #card #content #buttonDiv button {
+  width: 100%;
+  height: 40%;
+  border: none;
+  border-radius: 10px;
+  margin: 0 auto;
+  transition: all 0.5s ease;
+  font-weight: 900;
+}
+.container #card #content #buttonDiv button:nth-child(1) {
+  background-color: hsl(245deg, 75%, 52%);
+  color: hsl(225deg, 100%, 98%);
+}
+.container #card #content #buttonDiv button:nth-child(1):hover {
+  background-color: hsl(224deg, 23%, 55%);
+}
+.container #card #content #buttonDiv button:nth-child(2) {
+  background-color: transparent;
+  color: hsl(224deg, 23%, 55%);
+}
+.container #card #content #buttonDiv button:nth-child(2):hover {
+  color: hsl(223deg, 47%, 23%);
+}/*# sourceMappingURL=style.css.map */

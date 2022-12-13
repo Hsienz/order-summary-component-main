@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+$Pale-blue: hsl(225, 100%, 94%);
+$Bright-blue: hsl(245, 75%, 52%);
+$Very-pale-blue: hsl(225, 100%, 98%);
+$Desaturated-blue: hsl(224, 23%, 55%);
+$Dark-blue: hsl(223, 47%, 23%);
+$White: #fff;
+$font-family: "Red Hat Display", sans-serif;
+$transition: all 0.5s ease;
+$max-height: 700px;
+* {
+	padding: 0;
+	margin: 0;
+}
+
+.flex-row {
+	display: flex;
+}
+
+.flex-column {
+	display: flex;
+	flex-direction: column;
+}
+
+html,
+body {
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	background-color: $Pale-blue;
+}
+h1,
+p, a {
+	font-family: $font-family;
+}
+p {
+	font-size: 16px;
+	font-weight: 500;
+}
+h1 {
+	font-size: 32px;
+	font-weight: 900;
+}
+@media screen and (max-height: $max-height) {
+    html,body {
+        height : $max-height;
+    }
+
+}
+.container {
+	justify-content: center;
+	align-items: center;
+	height: inherit;
+
+	#card {
+		width: 400px;
+		height: 600px;
+		background-color: $White;
+		border-radius: 15px;
+		align-items: center;
+		& > img {
+			width: 100%;
+			border-radius: 15px 15px 0 0;
+		}
+		#content {
+			width: 90%;
+			height: 70%;
+			justify-content: space-around;
+			h1,
+			p {
+				text-align: center;
+			}
+			h1 {
+				color: $Dark-blue;
+                position: relative;
+                top: 15px;
+			}
+			p {
+				color: $Desaturated-blue;
+			}
+			#plan {
+				background-color: $Very-pale-blue;
+				padding: 15px 10px;
+				border-radius: 15px;
+				height: 10%;
+				justify-content: space-between;
+				align-items: center;
+				div {
+					div {
+						padding-left: 15px;
+						justify-content: center;
+						p:nth-child(1) {
+							color: $Dark-blue;
+                            font-weight: 700;
+						}
+					}
+				}
+				a {
+					padding-right: 15px;
+                    font-weight: 900;
+                    color:$Bright-blue;
+				}
+                a:hover {
+                    color: $Desaturated-blue;
+                    text-decoration: none;
+                }
+			}
+			#buttonDiv {
+				width: 100%;
+				height: 30%;
+				justify-content: space-around;
+				align-items: center;
+				button {
+					width: 100%;
+					height: 40%;
+					border: none;
+					border-radius: 10px;
+					margin: 0 auto;
+					transition: $transition;
+					font-weight: 900;
+				}
+				button:nth-child(1) {
+					background-color: $Bright-blue;
+					color: $Very-pale-blue;
+				}
+				button:nth-child(1):hover {
+					background-color: $Desaturated-blue;
+				}
+				button:nth-child(2) {
+					background-color: transparent;
+					color: $Desaturated-blue;
+				}
+				button:nth-child(2):hover {
+					color: $Dark-blue;
+				}
+			}
+		}
+	}
+}
