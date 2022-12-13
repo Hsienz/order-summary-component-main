@@ -32,8 +32,8 @@ body {
 body {
 	background-color: $Pale-blue;
     background-image: url(./images/pattern-background-desktop.svg);
-    background-repeat: no-repeat;
-    background-size: auto 50%;
+    background-repeat: repeat-x;
+    background-size: auto;
 }
 h1,
 p, a {
